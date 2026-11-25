@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root,
+[data-theme="royal-gold"] {
+  --theme-primary: #7A1C2C;
+  --theme-primary-dark: #5C121F;
+  --theme-accent: #C59B27;
+  --theme-accent-hover: #D4A934;
+  --theme-accent-deep: #7C5D12;
+  --theme-canvas: #FAF8F5;
+  --theme-surface: #FFFFFF;
+  --theme-tint: #FFFDF8;
+  --theme-tint-border: #EBD8B7;
+  --theme-border: #E5DEC9;
+  --theme-field-border: #6D534B;
+  --theme-ink: #231418;
+  --theme-footer-bg: #2A0D14;
+  --theme-on-dark-accent: #F6C8CF;
+  --theme-on-dark-gold: #F4D078;
+  --theme-header-login-bg: #6D142B;
+  --theme-header-login-hover: #540F21;
+  --theme-header-register-bg: #B68A35;
+  --theme-header-register-hover: #9B7328;
+}
+
+[data-theme="peacock-blue"] {
+  --theme-primary: #0B4F6C;
+  --theme-primary-dark: #073A50;
+  --theme-accent: #C6972C;
+  --theme-accent-hover: #D5A63A;
+  --theme-accent-deep: #0F766E;
+  --theme-canvas: #F3F9FA;
+  --theme-surface: #FFFFFF;
+  --theme-tint: #EBF6F7;
+  --theme-tint-border: #C4E2E5;
+  --theme-border: #D5E5E8;
+  --theme-field-border: #3D6170;
+  --theme-ink: #0F2430;
+  --theme-footer-bg: #072838;
+  --theme-on-dark-accent: #7DD3D8;
+  --theme-on-dark-gold: #F3D27A;
+  --theme-header-login-bg: #0B4F6C;
+  --theme-header-login-hover: #073A50;
+  --theme-header-register-bg: #0F766E;
+  --theme-header-register-hover: #0B5B55;
+}
+
+[data-theme="rose-romance"] {
+  --theme-primary: #9E2A5B;
+  --theme-primary-dark: #7D1E46;
+  --theme-accent: #C48375;
+  --theme-accent-hover: #B57365;
+  --theme-accent-deep: #8F2752;
+  --theme-canvas: #FDF6F8;
+  --theme-surface: #FFFFFF;
+  --theme-tint: #FCEFF3;
+  --theme-tint-border: #F0D0DA;
+  --theme-border: #EEDAE0;
+  --theme-field-border: #784D5D;
+  --theme-ink: #2A151D;
+  --theme-footer-bg: #381221;
+  --theme-on-dark-accent: #F7C6D4;
+  --theme-on-dark-gold: #F2CBB8;
+  --theme-header-login-bg: #9E2A5B;
+  --theme-header-login-hover: #7D1E46;
+  --theme-header-register-bg: #A66255;
+  --theme-header-register-hover: #8C4F43;
+}
+
+[data-theme="emerald-green"] {
+  --theme-primary: #0F5942;
+  --theme-primary-dark: #0A402F;
+  --theme-accent: #B68D2C;
+  --theme-accent-hover: #C59B38;
+  --theme-accent-deep: #7D5E12;
+  --theme-canvas: #F5F8F6;
+  --theme-surface: #FFFFFF;
+  --theme-tint: #ECF4EF;
+  --theme-tint-border: #CBE0D4;
+  --theme-border: #DAE5DF;
+  --theme-field-border: #3E6354;
+  --theme-ink: #12231D;
+  --theme-footer-bg: #0A2B20;
+  --theme-on-dark-accent: #BFE3D3;
+  --theme-on-dark-gold: #EED17F;
+  --theme-header-login-bg: #0F5942;
+  --theme-header-login-hover: #0A402F;
+  --theme-header-register-bg: #B68D2C;
+  --theme-header-register-hover: #997521;
+}
+
+@theme inline {
+  --font-serif: "Cormorant Garamond", "Noto Sans Devanagari", "Noto Sans Bengali", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Kannada", "Noto Sans Malayalam", "Noto Sans Gujarati", "Noto Sans Gurmukhi", "Noto Sans Oriya", "Noto Sans Arabic", "Noto Sans Ol Chiki", "Noto Sans Meetei Mayek", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans Devanagari", "Noto Sans Bengali", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Kannada", "Noto Sans Malayalam", "Noto Sans Gujarati", "Noto Sans Gurmukhi", "Noto Sans Oriya", "Noto Sans Arabic", "Noto Sans Ol Chiki", "Noto Sans Meetei Mayek", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-brand: var(--theme-primary);
+  --color-brand-dark: var(--theme-primary-dark);
+  --color-brand-accent: var(--theme-accent);
+  --color-brand-accent-hover: var(--theme-accent-hover);
+  --color-brand-accent-deep: var(--theme-accent-deep);
+  --color-canvas: var(--theme-canvas);
+  --color-surface: var(--theme-surface);
+  --color-tint: var(--theme-tint);
+  --color-tint-border: var(--theme-tint-border);
+  --color-hairline: var(--theme-border);
+  --color-field-border: var(--theme-field-border);
+  --color-ink: var(--theme-ink);
+  --color-footer-bg: var(--theme-footer-bg);
+  --color-on-dark-accent: var(--theme-on-dark-accent);
+  --color-on-dark-gold: var(--theme-on-dark-gold);
+  --color-header-login: var(--theme-header-login-bg);
+  --color-header-login-hover: var(--theme-header-login-hover);
+  --color-header-register: var(--theme-header-register-bg);
+  --color-header-register-hover: var(--theme-header-register-hover);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: var(--theme-canvas);
+    color: var(--theme-ink);
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Delicate Indian Mughal-inspired arch frame border */
+.arch-frame {
+  border-top-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

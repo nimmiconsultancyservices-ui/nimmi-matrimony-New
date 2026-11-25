@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" data-theme="royal-gold">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimmi Matrimony — Two Hearts, One Beautiful Journey</title>
+    <script>
+      (function () {
+        try {
+          var valid = ['royal-gold', 'peacock-blue', 'rose-romance', 'emerald-green'];
+          var stored = window.localStorage.getItem('nimmi_selected_theme');
+          if (stored && valid.indexOf(stored) !== -1) {
+            document.documentElement.dataset.theme = stored;
+          } else {
+            document.documentElement.dataset.theme = 'royal-gold';
+          }
+          var storedLang = window.localStorage.getItem('nimmi_selected_language');
+          if (storedLang && typeof storedLang === 'string') {
+            document.documentElement.lang = storedLang;
+          }
+        } catch (e) {
+          document.documentElement.dataset.theme = 'royal-gold';
+        }
+      })();
+    </script>
+    <meta
+      name="description"
+      content="Nimmi Matrimony is India's trusted matrimonial platform uniting verified Indian and NRI families across all communities and religions."
+    />
+    <meta property="og:title" content="Nimmi Matrimony — Two Hearts, One Beautiful Journey" />
+    <meta
+      property="og:description"
+      content="Discover verified matrimonial matches across Indian and international communities with traditional Jataka compatibility and modern privacy."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#7A1C2C" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Nimmi" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Arabic:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Noto+Sans+Gujarati:wght@400;500;600;700&family=Noto+Sans+Gurmukhi:wght@400;500;600;700&family=Noto+Sans+Kannada:wght@400;500;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Noto+Sans+Meetei+Mayek:wght@400;500;600;700&family=Noto+Sans+Ol+Chiki:wght@400;500;600;700&family=Noto+Sans+Oriya:wght@400;500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&family=Noto+Sans+Telugu:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-canvas text-ink antialiased selection:bg-tint selection:text-brand">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

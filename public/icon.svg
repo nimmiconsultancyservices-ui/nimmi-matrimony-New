@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="108" fill="#1B3B82"/>
+  <rect x="28" y="28" width="456" height="456" rx="88" stroke="#C59B27" stroke-width="6" stroke-opacity="0.7"/>
+  <!-- Outer Mandala Petals -->
+  <circle cx="256" cy="256" r="144" stroke="#C59B27" stroke-width="4" stroke-dasharray="8 10"/>
+  <!-- Interlocking Wedding Rings / Lotus -->
+  <circle cx="218" cy="256" r="76" stroke="#FAF8F5" stroke-width="14"/>
+  <circle cx="294" cy="256" r="76" stroke="#C59B27" stroke-width="14"/>
+  <!-- Subtle Pink Lotus Heart Center -->
+  <path d="M256 226C268 242 274 256 256 286C238 256 244 242 256 226Z" fill="#F9B4C4"/>
+  <circle cx="256" cy="202" r="8" fill="#C59B27"/>
+</svg>
